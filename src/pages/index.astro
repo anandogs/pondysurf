@@ -1,81 +1,420 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import "@fontsource/pt-sans";
+import "@fontsource/pt-serif";
+import landing from "../images/vicky_surfing.jpg";
+import group1 from "../images/group1.webp";
+import group2 from "../images/group2.webp";
+import group3 from "../images/group3.webp";
+import aboutVicky1 from "../images/about_vicky1.webp";
+import aboutVicky2 from "../images/about_vicky2.webp";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<main>
+  <section>
+    <div class="header">
+      <h1>Pondicherry Surf School</h1>
+      <h4>Surf Lessons In and Around Pondicherry !</h4>
+    </div>
+    <div>
+      <img src={landing} alt="Vicky Surfing" class="landing-image" />
+    </div>
+    <div class="ocean">
+      <h1>The Ocean is Waving at YOU !</h1>
+      <p>
+        Surfing is an ecstatic experience. Come connect with nature and discover
+        yourself.
+      </p>
+    </div>
+    <div class="group-lessons">
+      <div>
+        <h3>1 on 1 Lessons</h3>
+        <img src={group1} alt="Person Surfing" width="100%" />
+        <p>
+          Personalized Lessons, learn fast with full support of one of our
+          instructors.
+        </p>
+      </div>
+      <div>
+        <h3>Group Lessons</h3>
+        <img src={group2} alt="Vicky Teaching Surfers" width="100%" />
+        <p>Come with your friends, have a blast and create awesome memories.</p>
+      </div>
+      <div>
+        <h3>5 Days Courses</h3>
+        <img src={group3} alt="Girl surfing" width="100%" />
+        <p>
+          Complete course. From catching white water waves to intermediate
+          surfing down the line.
+        </p>
+      </div>
+    </div>
+    <div class="about-vicky">
+      <div>
+        <img src={aboutVicky1} alt="Vicky Surfing" width="100%" />
+        <h4>
+          Pondicherry Surf School is run by Vicky, who is eager to share with
+          you his passion for the ocean.
+        </h4><h4>
+          After having taught in several surfing schools in India he decided to
+          open his own.
+        </h4>
+      </div>
+      <div>
+        <img src={aboutVicky2} alt="Vicky Holding a Trophy" width="100%" />
+        <h4>Vicky is an aspiring professional surfer.</h4>
+        <h4>
+          After winning his first competition he is firmly determined to make a
+          name in the budding long-board community in India.
+        </h4>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <h4>About</h4>
+        <p>
+          Pondicherry Surf School is a fun and friendly place to discover the
+          joy of surfing.
+        </p>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <p>
+          Mobile : +91 74181 17262 <br />
+          WhatsApp : +91 74181 17262<br />
+
+          Instagram : <a href="http://www.instagram.com/pondicherry_surf_school"
+            >Pondicherry Surf School</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  h1 {
+    font-family: "PT Serif", serif;
+    color: rgb(36, 55, 70);
+    font-size: 31.104px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 55.3667px;
+    text-align: center;
+  }
+  h4 {
+    font-family: "PT Serif", serif;
+    color: rgb(49, 101, 142);
+    font-size: 14.9999px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .landing-image {
+    height: 800px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .ocean {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+  .ocean h1 {
+    text-align: start;
+    color: rgb(5, 41, 90);
+    font-weight: 900;
+    font-size: 31.104px;
+    line-height: 35px;
+    margin-bottom: 21.312px;
+    margin-top: 21.312px;
+  }
+
+  .ocean p {
+    text-align: start;
+    color: rgb(36, 55, 70);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26.7px;
+  }
+
+  p {
+    font-family: "PT Sans", sans-serif;
+  }
+  .group-lessons {
+    display: grid;
+    text-align: center;
+    width: 90%;
+    column-gap: 30px;
+    margin: auto;
+    row-gap: 40px;
+  }
+
+  .group-lessons h3 {
+    color: rgb(36, 55, 70);
+    font-family: "PT Serif", Times, sans-serif;
+    font-size: 18px;
+    line-height: 20.25px;
+    margin-bottom: 21.312px;
+    font-weight: 400;
+  }
+  .group-lessons p {
+    margin: auto;
+    color: rgb(36, 55, 70);
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 15px;
+    line-height: 26.7px;
+    margin-top: 21.312px;
+  }
+
+  .about-vicky {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    column-gap: 30px;
+    margin-top: 100px;
+  }
+
+  .about-vicky h4 {
+    color: rgb(36, 55, 70);
+    font-family: "PT Sans", Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 22.5px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    margin-top: 30px;
+  }
+
+  .footer {
+    display: grid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .footer h4 {
+    color: rgb(36, 55, 70);
+    font-family: "PT Serif", Times, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20.25px;
+    margin-bottom: 21.312px;
+  }
+
+  .footer p {
+    color: rgb(36, 55, 70);
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    text-align: left;
+	font-size: 15px;
+	line-height: 26.7px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      background-color: #243746;
+    }
+
+	section {
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+  }
+
+
+    h1 {
+      font-size: 37.3248px;
+      line-height: 66.4333px;
+    }
+    .ocean {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+    .ocean h1 {
+      font-size: 37.3248px;
+      line-height: 41.9833px;
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+
+    .ocean p {
+      font-size: 18px;
+      line-height: 32.0333px;
+    }
+    .group-lessons {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .group-lessons h3 {
+      font-size: 21.6px;
+      line-height: 24.3px;
+      margin-bottom: 32px;
+    }
+
+    .group-lessons p {
+      font-size: 18px;
+      line-height: 32.0333px;
+      margin-top: 32px;
+    }
+    .about-vicky {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .about-vicky h4 {
+      font-size: 27px;
+      line-height: 43.2px;
+      margin-bottom: 16px;
+    }
+    .footer {
+      grid-template-columns: repeat(2, 1fr);
+	  padding-top: 100px;
+	  padding-bottom: 200px;
+    }
+    .footer h4 {
+      font-size: 21.6px;
+      line-height: 24.3px;
+      margin-bottom: 32px;
+    }
+    .footer p {
+      font-size: 18px;
+      line-height: 32.0333px;
+      margin-top: 32px;
+    }
+  }
 </style>
